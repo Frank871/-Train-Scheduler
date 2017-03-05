@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>Train Scheduler</title>
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+
+<div class="jumbotron">
+   		<h1>Frank's Express Train Times.</h1>
+   </div>
+   </div>
+
+<div class="train">
+<div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">Current Train Schedule</h3>
+          </div>
+         <table class="table">
+
+         <thead>
+      <tr>
+         <th>Train Time</th>
+         <th>Destination</th>
+         <th>Frequency(min)</th>
+         <th>Next Arrival</th>
+         <th>Minutes Away</th>
+      </tr>
+   </thead>
+</table>
+</div>
+</div>
+<div class="update">
+<div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add Train</h3>
+          </div>
+
+        <form role="form">
+            <!--train name-->
+              <div class="form-group">
+                <label for="name-input">Train Name</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+          <!--destination-->
+              <div class="form-group">
+                <label for="destination-input">Destination</label>
+                <input class="form-control" id="destination-input" type="email">
+              </div>
+          <!--1st train time-->
+              <div class="form-group">
+                <label for="fristtrain-input-input">Frist Train Time (HH:mm-millatary time)</label>
+                <input class="form-control" id="fristtrain-input" type="number">
+                 <form role="form">
+          <!---frequency-->
+              <div class="form-group">
+                <label for="frequency-input">Frequency(min)</label>
+                <input class="form-control" id="frequency-input" type="text">
+              </div>
+            <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+            </form>   
+     	</div>
+     	</div> 
+     </div>        
+ </div>
+  
+
+
+
+<script type="text/javascript" src="assets/javascript/timer.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+	font-family: 'Kavivanar', cursive;
+    background-image: url("http://az616578.vo.msecnd.net/files/2016/02/27/6359219226453491021470707808_train.jpg");
+}
+
+
+
+.jumbotron{
+    font-family: 'Kavivanar', cursive;
+	width: 60%;
+	color: black;
+	background-color: darkturquoise;
+	text-align: center;
+	padding-bottom: 25px;
+	margin-top: 20px;
+    border:  solid;
+    border-style: double;
+    border-width: 10px;
+    float: right;
+    position: relative;
+    right:  300px;
+  }
+
+.train{
+	width: 60%;
+	position: relative;
+	left: 200px;
+
+}
+
+.update{
+	width: 60%;
+	position: relative;
+	left: 200px;
+}
