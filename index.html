@@ -5,6 +5,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 	<title>Train Scheduler</title>
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
@@ -22,7 +24,7 @@
           <div class="panel-heading">
             <h3 class="panel-title">Current Train Schedule</h3>
           </div>
-         <table class="table">
+         <table class="table" id="train-table">
 
          <thead>
       <tr>
@@ -33,6 +35,10 @@
          <th>Minutes Away</th>
       </tr>
    </thead>
+   <tbody>
+
+   
+   </tbody>
 </table>
 </div>
 </div>
@@ -46,22 +52,22 @@
             <!--train name-->
               <div class="form-group">
                 <label for="name-input">Train Name</label>
-                <input class="form-control" id="name-input" type="text">
+                <input class="form-control" id="train-name" type="text">
               </div>
           <!--destination-->
               <div class="form-group">
                 <label for="destination-input">Destination</label>
-                <input class="form-control" id="destination-input" type="email">
+                <input class="form-control" id="destination-input" type="text">
               </div>
           <!--1st train time-->
               <div class="form-group">
-                <label for="fristtrain-input-input">Frist Train Time (HH:mm-millatary time)</label>
-                <input class="form-control" id="fristtrain-input" type="number">
+                <label for="fristtrain-input">Frist Train Time (HH:mm-millatary time)</label>
+                <input class="form-control" id="firsttrain-input" type="number">
                  <form role="form">
           <!---frequency-->
               <div class="form-group">
                 <label for="frequency-input">Frequency(min)</label>
-                <input class="form-control" id="frequency-input" type="text">
+                <input class="form-control" id="frequency-input" type="number">
               </div>
             <button class="btn btn-default" id="add-user" type="submit">Submit</button>
             </form>   
@@ -73,6 +79,6 @@
 
 
 
-<script type="text/javascript" src="assets/javascript/timer.js"></script>
+<script type="text/javascript" src="assets/javascript/time.js"></script>
 </body>
 </html>
